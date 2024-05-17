@@ -1,0 +1,42 @@
+@import './mixin.scss';
+
+.appbar {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $dark-grey;
+
+
+    &__logo {
+        transform: scale(0.45);
+    }
+
+    &__nav {
+        display: flex;
+        position: absolute;
+        top: 18px;
+        right: 0px;
+        bottom: 0px;
+        left: 20px;
+        font-size: 1.5rem;
+    }
+
+    &__location {
+        background-color: $form-bg;
+        width: 100%;
+        text-align: center;
+
+
+        &--icon {
+            margin-right: 0.625rem;
+        }
+    }
+}
+
+.appbar-home {
+    & .appbar__nav {
+        display: none;
+    }
+}

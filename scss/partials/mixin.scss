@@ -1,0 +1,15 @@
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$dark-grey: #353535;
+$section-bg: #f6f6f6;
+$form-bg: #eaeaea;
+
+$light-weight: 300;
+$medium-weight: 500;
+$bold-weight: 700;
+$font-text: 'Roboto', sans-serif;
+
+@mixin gradient-cta {
+    background: linear-gradient(to top, $primary-color, $secondary-color);
+}

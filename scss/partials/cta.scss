@@ -1,0 +1,11 @@
+@import './mixin.scss';
+
+.cta {
+    @include gradient-cta;
+    border-radius: 40px;
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+    font-family: $font-text;
+    font-weight: $medium-weight;
+}

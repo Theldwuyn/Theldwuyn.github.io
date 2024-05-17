@@ -1,0 +1,23 @@
+@import './mixin.scss';
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 25px 70px 25px;
+    background-color: $section-bg;
+
+
+    &__title {
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    &__content {
+        font-weight: $light-weight;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+}

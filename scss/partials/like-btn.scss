@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+@mixin heartshape {
+    font-family: 'Font Awesome 6 Free';
+    content: "\f004";
+    font-size: 23px;
+    transform: scale(0.9,1.05);
+}
+
+@mixin heart-transition {
+    transition: opacity 200ms ease;
+}
+
+.like-btn {
+    display: none;
+}
+
+.like-btn + .like-btn__icon {
+    position: relative;
+    display: inline-block;
+}
+
+.like-btn + .like-btn__icon:before {
+    @include heartshape();
+    position: absolute;
+    top: -1px;
+    opacity: 1;
+    @include heart-transition();
+}
+
+.like-btn + .like-btn__icon:after {
+    @include heartshape();
+    font-weight: 900;
+    background: linear-gradient(to bottom, $primary-color, $secondary-color);
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+    opacity: 0;
+    @include heart-transition();
+}
+
+.like-btn:checked + .like-btn__icon:after {
+    opacity: 1;
+}
+
+.like-btn:checked + .like-btn__icon:before {
+    opacity: 0;
+}

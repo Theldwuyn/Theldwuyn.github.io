@@ -1,4 +1,4 @@
-@import './mixin.scss';
+@import './variables.scss';
 
 .hero {
     display: flex;
@@ -21,3 +21,121 @@
         margin-bottom: 30px;
     }
 }
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10px;
+        margin-bottom: 25px;
+        padding: 25px;
+        background-color: $section-bg;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.13);
+
+        &--order {
+            position: absolute;
+            font-size: 0.813rem;
+            top: 22px;
+            left: -12px;
+            padding: 5px 9px;
+            background-color: $primary-color;
+            border-radius: 50%;
+            color: white;
+        }
+
+        &--icon {
+            font-size: 1.2rem;
+            margin-left: 15px;
+            color: #7e7e7e;
+        }
+
+        &--text {
+            margin-left: 30px;
+        }
+    }
+}
+
+.restaurant {
+    background-color: $section-bg;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin: 20px 0;
+    }
+
+    & .flexbox-column-row {
+        gap: 20px;
+    }
+}
+
+.card__content {
+    position: relative;
+
+    & .like-btn__icon {
+        position: absolute;
+        top: -10px;
+        right: 30px;
+    }
+}
+
+.card {
+    position: relative;
+
+    & .new {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .hero {
+        &__title {
+            font-size: 2.5rem;
+        }
+    }
+
+    .instructions {
+        padding: 40px 180px;
+
+        &__card {
+            width: 25%;
+        }
+
+        & .flexbox-column-row {
+            justify-content: space-between;
+        }
+    }
+
+    .restaurant {
+        padding: 40px 180px;
+
+        & .flexbox-column-row {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        & a {
+            width: 45%;
+        }
+    }
+    
+}
+

@@ -1,7 +1,11 @@
 @import './partials/header.scss';
-@import './partials/mixin.scss';
+@import './partials/variables.scss';
 @import './partials/home.scss';
 @import './partials/cta.scss';
+@import './partials/card.scss';
+@import './partials/like-btn.scss';
+@import './partials/new-btn.scss';
+@import './partials/footer.scss';
 
 :root {
     font-size: 16px;
@@ -19,13 +23,39 @@ body {
 p {
     font-family: $font-text;
     font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: $font-text;
+    font-weight: $bold-weight;
+    padding: 0;
+    margin: 0;
 }
 
 h1, h2 {
-    font-family: $font-text;
-    font-weight: $medium-weight;
     font-size: 1.5rem;
-    padding: 0;
-    margin: 0;
+}
+
+.primary-color {
+    color: $primary-color;
+}
+
+.flexbox-column-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-container {
+    display: inline-block;
+    width: 25px;
+    text-align: left;
+}
+
+@media (min-width:1024px) {
+    .flexbox-column-row {
+        flex-direction: row;
+    }
 }
 

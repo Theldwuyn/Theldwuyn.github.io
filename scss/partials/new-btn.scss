@@ -1,0 +1,9 @@
+@import './variables.scss';
+
+.new {
+    background-color: $tertiary-color;
+    border-radius: 3px;
+    padding: 7px 13px;
+    color: $new-text-color;
+    font-size: 0.875rem;
+}

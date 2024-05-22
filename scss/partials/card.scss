@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    font-family: $font-text;
+    font-size: 1rem;
+
+    &__img {
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 200px;
+    }
+
+    &__content {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+
+        &--title {
+            font-weight: $medium-weight;
+            margin-bottom: 10px;
+        }
+
+        &--text {
+            font-weight: $light-weight;
+        }
+    }
+}

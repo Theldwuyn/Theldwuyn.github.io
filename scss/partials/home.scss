@@ -81,16 +81,6 @@
     }
 }
 
-.card__content {
-    position: relative;
-
-    & .like-btn__icon {
-        position: absolute;
-        top: -10px;
-        right: 30px;
-    }
-}
-
 .card {
     position: relative;
 
@@ -101,7 +91,15 @@
     }
 }
 
+.card-wrapper {
+    position: relative;
 
+    & .input-wrapper {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+    }
+}
 
 @media (min-width: 1024px) {
 
@@ -132,7 +130,7 @@
             gap: 40px;
         }
 
-        & a {
+        & .card-wrapper {
             width: 45%;
         }
     }

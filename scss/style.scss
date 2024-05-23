@@ -1,11 +1,4 @@
-@import './partials/header.scss';
 @import './partials/variables.scss';
-@import './partials/home.scss';
-@import './partials/cta.scss';
-@import './partials/card.scss';
-@import './partials/like-btn.scss';
-@import './partials/new-btn.scss';
-@import './partials/footer.scss';
 
 :root {
     font-size: 16px;
@@ -59,3 +52,10 @@ h1, h2 {
     }
 }
 
+@import './partials/home.scss';
+@import './partials/cta.scss';
+@import './partials/card.scss';
+@import './partials/like-btn.scss';
+@import './partials/new-btn.scss';
+@import './partials/footer.scss';
+@import './partials/header.scss';

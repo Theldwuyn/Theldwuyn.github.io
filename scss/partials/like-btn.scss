@@ -20,29 +20,38 @@
     display: inline-block;
 }
 
-.like-btn + .like-btn__icon:before {
+.like-btn + .like-btn__icon::before {
     @include heartshape();
     position: absolute;
     top: -1px;
+    left: 0;
     opacity: 1;
     @include heart-transition();
 }
 
-.like-btn + .like-btn__icon:after {
+.like-btn + .like-btn__icon::after {
     @include heartshape();
     font-weight: 900;
     background: linear-gradient(to bottom, $primary-color, $secondary-color);
     background-clip: text;
     color: transparent;
     position: absolute;
+    top: -2px;
+    left: 0;
+
+    @supports (-moz-appearance:none) {
+        top: 0;
+        left: 0;
+    }
+
     opacity: 0;
     @include heart-transition();
 }
 
-.like-btn:checked + .like-btn__icon:after {
+.like-btn:checked + .like-btn__icon::after {
     opacity: 1;
 }
 
-.like-btn:checked + .like-btn__icon:before {
+.like-btn:checked + .like-btn__icon::before {
     opacity: 0;
 }

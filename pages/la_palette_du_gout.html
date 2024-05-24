@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <title>OhMyFood - La Palette du Goût</title>
+</head>
+<body class="restaurant-body">
+    <header class="appbar">
+        <img src="../images/logo/ohmyfood.png" alt="Logo ohmyfood" class="appbar__logo">
+        <nav class="appbar__nav">
+            <a href="../index.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </nav>
+    </header>
+    <div class="img_restaurant">
+        <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat">
+    </div>
+    <div class="main-wrap">
+    <section class="dishes">
+        <h1 class="dishes__title">La palette du goût</h1>
+        <div class="input-wrapper">
+            <input type="checkbox" id="like_la_palette_du_gout" class="like-btn display-none">
+            <label for="like_la_palette_du_gout" class="like-btn__icon"></label>
+        </div>
+        <div class="dishes__category">
+            <div class="dishes__category--title">
+                <h2 class="light-weight">Entrées</h2>
+                <div class="title-accent"></div>
+            </div>
+            <div class="dishes__category--content">
+                <input type="checkbox" id="entree--1" class="chkbox-dishes display-none">
+                <label for="entree--1" class="chkbox-dishes__card">
+                    <span class="main">
+                        <span class="main__content">
+                            <span class="main__content--title medium-weight">Fricassée d'escargots</span>
+                            <span class="main__content--text light-weight">Au piment d'Espelette</span>
+                        </span>
+                        <span class="main__price no-overflow dark-grey">
+                            <span>25€</span>
+                        </span>
+                    </span>
+                    <span class="checksign">
+                        <span class="white-circle"></span>
+                        <span class="checksign-icon fa-solid fa-check"></span>
+                    </span>
+                </label>
+            </div>
+            <div class="dishes__category--content">
+                <input type="checkbox" id="entree--2" class="chkbox-dishes display-none">
+                <label for="entree--2" class="chkbox-dishes__card">
+                    <span class="main">
+                        <span class="main__content">
+                            <span class="main__content--title medium-weight">Foie gras de canard mi-cuit</span>
+                            <span class="main__content--text light-weight">Et ses copeaux de truffe noire</span>
+                        </span>
+                        <span class="main__price no-overflow dark-grey">
+                            <span>35€</span>
+                        </span>
+                    </span>
+                    <span class="checksign">
+                        <span class="white-circle"></span>
+                        <span class="checksign-icon fa-solid fa-check"></span>
+                    </span>
+                </label>
+            </div>
+            <div class="dishes__category--content">
+                <input type="checkbox" id="entree--3" class="chkbox-dishes display-none">
+                <label for="entree--3" class="chkbox-dishes__card">
+                    <span class="main">
+                        <span class="main__content">
+                            <span class="main__content--title medium-weight">Œuf au plat</span>
+                            <span class="main__content--text light-weight">Assaisonné à la truffe sur lit de caviar</span>
+                        </span>
+                        <span class="main__price no-overflow dark-grey">
+                            <span>20€</span>
+                        </span>
+                    </span>
+                    <span class="checksign">
+                        <span class="white-circle"></span>
+                        <span class="checksign-icon fa-solid fa-check"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="dishes__category">
+            <div class="dishes__category--title">
+                <h2 class="light-weight">Plats</h2>
+                <div class="title-accent"></div>
+            </div>
+            <div class="dishes__category--content">
+                <input type="checkbox" id="dish--1" class="chkbox-dishes display-none">
+                <label for="dish--1" class="chkbox-dishes__card">
+                    <span class="main">
+                        <span class="main__content">
+                            <span class="main__content--title medium-weight">Filet de bœuf aux herbes</span>
+                            <span class="main__content--text light-weight">Accompagné de sa ribambelle de légumes</span>
+                        </span>
+                        <span class="main__price no-overflow dark-grey">
+                            <span>40€</span>
+                        </span>
+                    </span>
+                    <span class="checksign">
+                        <span class="white-circle"></span>
+                        <span class="checksign-icon fa-solid fa-check"></span>
+                    </span>
+                </label>
+            </div>
+            <div class="dishes__category--content">
+                <input type="checkbox" id="dish--2" class="chkbox-dishes display-none">
+                <label for="dish--2" class="chkbox-dishes__card">
+                    <span class="main">
+                        <span class="main__content">
+                            <span class="main__content--title medium-weight">Parmentier de queue de bœuf</span>
+                            <span class="main__content--text light-weight">À la truffe noire sur sa purée de panais</span>
+                        </span>
+                        <span class="main__price no-overflow dark-grey">
+                            <span>35€</span>
+                        </span>
+                    </span>
+                    <span class="checksign">
+                        <span class="white-circle"></span>
+                        <span class="checksign-icon fa-solid fa-check"></span>
+                    </span>
+                </label>
+            </div>
+            <div class="dishes__category--content">
+                <input type="checkbox" id="dish--3" class="chkbox-dishes display-none">
+                <label for="dish--3" class="chkbox-dishes__card">
+                    <span class="main">
+                        <span class="main__content">
+                            <span class="main__content--title medium-weight">Filet de turbot</span>
+                            <span class="main__content--text light-weight">Aux agrumes</span>
+                        </span>
+                        <span class="main__price no-overflow dark-grey">
+                            <span>44€</span>
+                        </span>
+                    </span>
+                    <span class="checksign">
+                        <span class="white-circle"></span>
+                        <span class="checksign-icon fa-solid fa-check"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="dishes__category">
+            <div class="dishes__category--title">
+                <h2 class="light-weight">Desserts</h2>
+                <div class="title-accent"></div>
+            </div>
+            <div class="dishes__category--content">
+                <input type="checkbox" id="dessert--1" class="chkbox-dishes display-none">
+                <label for="dessert--1" class="chkbox-dishes__card">
+                    <span class="main">
+                        <span class="main__content">
+                            <span class="main__content--title medium-weight">Paris-Brest</span>
+                            <span class="main__content--text light-weight">Revisité</span>
+                        </span>
+                        <span class="main__price no-overflow dark-grey">
+                            <span>18€</span>
+                        </span>
+                    </span>
+                    <span class="checksign">
+                        <span class="white-circle"></span>
+                        <span class="checksign-icon fa-solid fa-check"></span>
+                    </span>
+                </label>
+            </div>
+            <div class="dishes__category--content">
+                <input type="checkbox" id="dessert--2" class="chkbox-dishes display-none">
+                <label for="dessert--2" class="chkbox-dishes__card">
+                    <span class="main">
+                        <span class="main__content">
+                            <span class="main__content--title medium-weight">Macaron au chocolat d'exception </span>
+                            <span class="main__content--text light-weight">Et glace à la vanille de Madagascar</span>
+                        </span>
+                        <span class="main__price no-overflow dark-grey">
+                            <span>22€</span>
+                        </span>
+                    </span>
+                    <span class="checksign">
+                        <span class="white-circle"></span>
+                        <span class="checksign-icon fa-solid fa-check"></span>
+                    </span>
+                </label>
+            </div>
+            <div class="dishes__category--content">
+                <input type="checkbox" id="dessert--3" class="chkbox-dishes display-none">
+                <label for="dessert--3" class="chkbox-dishes__card">
+                    <span class="main">
+                        <span class="main__content">
+                            <span class="main__content--title medium-weight">Mousse au chocolat</span>
+                            <span class="main__content--text light-weight">Au piment d'Espelette et à la truffe noire</span>
+                        </span>
+                        <span class="main__price no-overflow dark-grey">
+                            <span>23€</span>
+                        </span>
+                    </span>
+                    <span class="checksign">
+                        <span class="white-circle"></span>
+                        <span class="checksign-icon fa-solid fa-check"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="cta">
+            <span class="cta__content">Commander</span>
+        </div>
+    </section>
+    
+
+    <footer class="appfooter">
+        <img src="../images/logo/ohmyfood@2x.svg" class="appfooter__logo" alt="logo ohmyfood">
+        <div class="flexbox-column-row">
+            <div class="flexbox-column-row">
+                <a href="#" class="appfooter__link">
+                    <div class="icon-container">
+                        <i class="appfooter__link--icon fa-solid fa-utensils"></i>
+                    </div>
+                    <p>Proposer un restaurant</p>
+                </a>
+                <a href="#" class="appfooter__link">
+                    <div class="icon-container">
+                        <i class="appfooter__link--icon fa-solid fa-handshake-angle scale"></i>
+                    </div>
+                    <p>Devenir partenaire</p>
+                </a>
+            </div>
+            <div class="flexbox-column-row">
+                <a href="#" class="appfooter__link">
+                    <p class="appfooter__link--content">Mentions légales</p>
+                </a>
+                <a href="mailto:ohmyfood@mail.com" class="appfooter__link">
+                    <p class="appfooter__link--content">Contact</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

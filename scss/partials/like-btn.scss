@@ -11,10 +11,6 @@
     transition: opacity 200ms ease;
 }
 
-.like-btn {
-    display: none;
-}
-
 .like-btn + .like-btn__icon {
     position: relative;
     display: inline-block;

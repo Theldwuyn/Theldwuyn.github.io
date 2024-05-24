@@ -1,0 +1,72 @@
+@import './variables.scss';
+
+.chkbox-dishes__card {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-top: 20px;
+
+    & .main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        box-sizing: border-box;
+        padding: 15px;
+        gap: 10px;
+        width: 100%;
+
+        &__content {
+            overflow: hidden;
+
+            &--title {
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+        }
+
+        &__price {
+            margin-right: 0;
+            transition: margin-right 200ms ease;
+        }
+    }
+
+    & .checksign {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 100%;
+        background-color: $tertiary-color;
+        right: 0;
+        margin-right: -90px;
+        transition: margin-right 200ms ease;
+
+        & .white-circle {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+
+        & .checksign-icon {
+            position: absolute;
+            color: $tertiary-color;
+        }
+    }
+}
+
+.chkbox-dishes:checked + .chkbox-dishes__card .checksign {
+    margin-right: 0;
+}
+
+.chkbox-dishes:checked + .chkbox-dishes__card .main__price {
+    margin-right: 90px;
+}

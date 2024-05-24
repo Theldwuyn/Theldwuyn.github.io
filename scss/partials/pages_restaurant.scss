@@ -1,0 +1,95 @@
+@import './variables.scss';
+
+.restaurant-body {
+    position: relative;
+}
+
+.img_restaurant {
+    display: flex;
+    height: 300px;
+    position: absolute;
+    
+    & img {
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 60%;
+    }
+}
+
+.main-wrap {
+    position: absolute;
+    width: 100%;
+    top: 320px;
+
+    & .input-wrapper {
+        position: absolute;
+        top: 30px;
+        right: 60px;
+    }
+}
+
+.dishes {
+    display: flex;
+    flex-direction: column;
+    background-color: $section-bg;
+    border-radius: 30px 30px 0 0;
+    padding: 20px;
+
+    &__title {
+        font-family: $font-title;
+        font-size: 28px;
+        font-weight: 400;
+        padding: 15px 0;
+        margin-right: 50px;
+    }
+
+    &__category {
+
+        margin-bottom: 40px;
+
+        & h2 {
+            font-size: 1.125rem;
+        }
+
+        & span {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        & .no-overflow {
+            overflow: visible;
+        }
+
+        &--title {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        & .title-accent {
+            width: 50px;
+            height: 5px;
+            background-color: $tertiary-color;
+            margin-top: 5px;
+        }
+
+    }
+
+    & .cta {
+        text-align: center;
+        margin: 10px auto 30px;
+        padding: 15px 50px;
+
+    }
+}
+
+@media (min-width:1024px) {
+    .dishes {
+        margin: 0 180px;
+    }
+
+    .main-wrap .input-wrapper {
+        right: 240px;
+    }
+}

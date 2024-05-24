@@ -13,7 +13,7 @@ body {
     margin: 0;
 }
 
-p {
+p, span {
     font-family: $font-text;
     font-size: 1rem;
     padding: 0;
@@ -22,17 +22,24 @@ p {
 
 h1, h2, h3 {
     font-family: $font-text;
-    font-weight: $bold-weight;
     padding: 0;
     margin: 0;
 }
 
-h1, h2 {
-    font-size: 1.5rem;
-}
-
 .primary-color {
     color: $primary-color;
+}
+
+.dark-grey {
+    color: $dark-grey;
+}
+
+.light-weight {
+    font-weight: $light-weight;
+}
+
+.medium-weight {
+    font-weight: $medium-weight;
 }
 
 .flexbox-column-row {
@@ -44,6 +51,10 @@ h1, h2 {
     display: inline-block;
     width: 25px;
     text-align: left;
+}
+
+.display-none {
+    display: none;
 }
 
 @media (min-width:1024px) {
@@ -59,3 +70,5 @@ h1, h2 {
 @import './partials/new-btn.scss';
 @import './partials/footer.scss';
 @import './partials/header.scss';
+@import './partials/pages_restaurant.scss';
+@import './partials/dishes_card.scss';

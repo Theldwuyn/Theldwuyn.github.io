@@ -385,6 +385,7 @@ h1, h2, h3 {
   background-color: #f6f6f6;
   border-radius: 30px 30px 0 0;
   padding: 20px;
+  overflow: hidden;
 }
 .dishes__title {
   font-family: "Shrikhand", sans-serif;
@@ -395,6 +396,7 @@ h1, h2, h3 {
 }
 .dishes__category {
   margin-bottom: 40px;
+  animation: animation-content 800ms ease-in-out both;
 }
 .dishes__category h2 {
   font-size: 1.125rem;
@@ -417,6 +419,74 @@ h1, h2, h3 {
   height: 5px;
   background-color: #99e2d0;
   margin-top: 5px;
+  transform-origin: left;
+  animation: animation-accent 1000ms cubic-bezier(0, 0, 0.11, 0.73) both;
+}
+.dishes__category .title-accent--1 {
+  animation-delay: 1000ms;
+}
+.dishes__category .title-accent--2 {
+  animation-delay: 3150ms;
+}
+.dishes__category .title-accent--3 {
+  animation-delay: 5300ms;
+}
+.dishes__category--1 {
+  animation-delay: 0ms;
+}
+.dishes__category--1--content {
+  transform-origin: center;
+  animation: animation-card 1000ms cubic-bezier(0.27, 0.04, 0.02, 1.29) both;
+}
+.dishes__category--1--content--1 {
+  animation-delay: 800ms;
+}
+.dishes__category--1--content--2 {
+  animation-delay: 1050ms;
+}
+.dishes__category--1--content--3 {
+  animation-delay: 1300ms;
+}
+.dishes__category--1--content--4 {
+  animation-delay: 1550ms;
+}
+.dishes__category--2 {
+  animation-delay: 2150ms;
+}
+.dishes__category--2--content {
+  transform-origin: center;
+  animation: animation-card 1000ms cubic-bezier(0.27, 0.04, 0.02, 1.29) both;
+}
+.dishes__category--2--content--1 {
+  animation-delay: 2950ms;
+}
+.dishes__category--2--content--2 {
+  animation-delay: 3200ms;
+}
+.dishes__category--2--content--3 {
+  animation-delay: 3450ms;
+}
+.dishes__category--2--content--4 {
+  animation-delay: 3700ms;
+}
+.dishes__category--3 {
+  animation-delay: 4300ms;
+}
+.dishes__category--3--content {
+  transform-origin: center;
+  animation: animation-card 1000ms cubic-bezier(0.27, 0.04, 0.02, 1.29) both;
+}
+.dishes__category--3--content--1 {
+  animation-delay: 5100ms;
+}
+.dishes__category--3--content--2 {
+  animation-delay: 5350ms;
+}
+.dishes__category--3--content--3 {
+  animation-delay: 5600ms;
+}
+.dishes__category--3--content--4 {
+  animation-delay: 5850ms;
 }
 .dishes .cta {
   text-align: center;
@@ -424,6 +494,21 @@ h1, h2, h3 {
   padding: 15px 50px;
 }
 
+@keyframes animation-content {
+  0% {
+    transform: translate(-110%);
+  }
+}
+@keyframes animation-accent {
+  0% {
+    transform: scaleX(0);
+  }
+}
+@keyframes animation-card {
+  0% {
+    transform: scaleX(0);
+  }
+}
 @media (min-width: 1024px) {
   .dishes {
     margin: 0 180px;

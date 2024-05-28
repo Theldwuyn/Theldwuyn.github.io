@@ -94,8 +94,9 @@ $accent-bezier: cubic-bezier(0,0,.11,.73);
         @for $i from 1 through 3 {
             &--#{$i} {
                 animation-delay: $total-time * ($i - 1);
-                // $total-time represent the total duration of the animation (title + each dishes cards),
+                // $total-time represent the total duration of the main animation (title + each dishes cards),
                 // delay = 0 for $i = 1 because it's the first animation, no delay needed
+                //main animation is repeated 3 times, for "entrees", "plats" and "desserts" div
             
 
                 &--content {
@@ -120,22 +121,24 @@ $accent-bezier: cubic-bezier(0,0,.11,.73);
         text-align: center;
         margin: 10px auto 30px;
         padding: 15px 50px;
-
     }
 }
 
+//Keyframe for "entress" "plats" "desserts" div
 @keyframes animation-content {
     0% {
       transform: translate(-110%);
     }
 }
-  
+
+//keyframe for the green line below titles
 @keyframes animation-accent {
     0% {
       transform: scaleX(0);
     }
 }
 
+//keyframe for dish card
 @keyframes animation-card {
     0% {
         transform: scaleX(0);

@@ -63,6 +63,7 @@
     }
 }
 
+//New values for margin-right for checksign and price when the card is checked
 .chkbox-dishes:checked + .chkbox-dishes__card .checksign {
     margin-right: 0;
 }

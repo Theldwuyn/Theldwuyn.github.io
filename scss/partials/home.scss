@@ -57,7 +57,11 @@
         &--icon {
             font-size: 1.2rem;
             margin-left: 15px;
-            color: #7e7e7e;
+            color: $icon-grey;
+        }
+
+        & .purple-icon {
+            color: $primary-color;
         }
 
         &--text {

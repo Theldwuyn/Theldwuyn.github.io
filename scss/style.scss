@@ -1,7 +1,10 @@
 @import './partials/variables.scss';
 
+//Reset
+
 :root {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -26,9 +29,7 @@ h1, h2, h3 {
     margin: 0;
 }
 
-.primary-color {
-    color: $primary-color;
-}
+//Custom classes
 
 .dark-grey {
     color: $dark-grey;
@@ -42,9 +43,16 @@ h1, h2, h3 {
     font-weight: $medium-weight;
 }
 
+//Class for changing flex-direction with media queries
 .flexbox-column-row {
     display: flex;
     flex-direction: column;
+}
+
+@media (min-width:1024px) {
+    .flexbox-column-row {
+        flex-direction: row;
+    }
 }
 
 .icon-container {
@@ -55,12 +63,6 @@ h1, h2, h3 {
 
 .display-none {
     display: none;
-}
-
-@media (min-width:1024px) {
-    .flexbox-column-row {
-        flex-direction: row;
-    }
 }
 
 @import './partials/home.scss';

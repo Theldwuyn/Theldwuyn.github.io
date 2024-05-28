@@ -35,6 +35,7 @@
     top: -2px;
     left: 0;
 
+    //compatibility fix for position
     @supports (-moz-appearance:none) {
         top: 0;
         left: 0;
@@ -44,6 +45,7 @@
     @include heart-transition();
 }
 
+//new values of opacity when the button is checked
 .like-btn:checked + .like-btn__icon::after {
     opacity: 1;
 }

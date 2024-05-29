@@ -1,7 +1,7 @@
 @import './variables.scss';
 
 .icon-container {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .appfooter {
@@ -35,7 +35,7 @@
 
 
 
-@media (min-width:1024px) {
+@media (min-width:768px) {
     .appfooter {
         flex-direction: row-reverse;
         gap: 50px;

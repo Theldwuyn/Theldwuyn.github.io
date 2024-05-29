@@ -43,13 +43,13 @@ h1, h2, h3 {
     font-weight: $medium-weight;
 }
 
-//Class for changing flex-direction with media queries
+//Class to change flex-direction with media queries
 .flexbox-column-row {
     display: flex;
     flex-direction: column;
 }
 
-@media (min-width:1024px) {
+@media (min-width:768px) {
     .flexbox-column-row {
         flex-direction: row;
     }
@@ -74,3 +74,4 @@ h1, h2, h3 {
 @import './partials/header.scss';
 @import './partials/pages_restaurant.scss';
 @import './partials/dishes_card.scss';
+@import './partials/loader.scss';

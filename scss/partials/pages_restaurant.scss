@@ -46,7 +46,7 @@ $accent-bezier: cubic-bezier(0,0,.11,.73);
 
     &__title {
         font-family: $font-title;
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: 400;
         padding: 15px 0;
         margin-right: 50px;
@@ -146,7 +146,7 @@ $accent-bezier: cubic-bezier(0,0,.11,.73);
 }
 
 
-@media (min-width:1024px) {
+@media (min-width:768px) {
     .dishes {
         margin: 0 180px;
     }

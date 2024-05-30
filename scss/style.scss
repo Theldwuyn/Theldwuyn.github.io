@@ -57,8 +57,13 @@ h1, h2, h3 {
 
 .icon-container {
     display: inline-block;
-    width: 25px;
     text-align: left;
+}
+
+@media (max-width:768px){
+    .icon-container {
+        width: 25px;
+    }
 }
 
 .display-none {

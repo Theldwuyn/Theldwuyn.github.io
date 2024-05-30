@@ -146,13 +146,23 @@ $accent-bezier: cubic-bezier(0,0,.11,.73);
 }
 
 
-@media (min-width:768px) {
+@media (min-width:1024px) {
     .dishes {
         margin: 0 180px;
     }
 
     .main-wrap .input-wrapper {
         right: 240px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .dishes {
+        margin: 0 60px;
+    }
+
+    .main-wrap .input-wrapper {
+        right: 120px;
     }
 }
 

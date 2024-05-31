@@ -22,20 +22,6 @@
         left: 20px;
         font-size: 1.5rem;
     }
-
-    &__location {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-color: $form-bg;
-        width: 100%;
-        text-align: center;
-        padding: 12px;
-
-        &--icon {
-            margin-right: 10px;
-        }
-    }
 }
 
 .appbar-home {

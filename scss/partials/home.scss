@@ -6,19 +6,35 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px 25px 70px 25px;
+    padding-bottom: 70px;
     background-color: $section-bg;
 
+    &__location {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: $form-bg;
+        color: $dark-grey;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
 
-    &__title {
-        margin: 0 auto;
-        padding: 0 40px;
+        &--icon {
+            margin-right: 10px;
+        }
     }
 
     &__content {
-        font-weight: $light-weight;
-        margin-top: 15px;
-        margin-bottom: 30px;
+        padding: 40px 25px 30px 25px;
+
+        &--title {
+            margin: 0 40px;
+        }
+
+        &--text {
+            font-weight: $light-weight;
+            margin-top: 15px;
+        }
     }
 }
 
@@ -108,7 +124,7 @@
 @media (min-width: 1024px) {
 
     .hero {
-        &__title {
+        &__content--title {
             font-size: 2.5rem;
         }
     }
@@ -144,7 +160,7 @@
 @media (min-width: 768px) and (max-width:1024px) {
 
     .hero {
-        &__title {
+        &__content--title {
             font-size: 2.5rem;
         }
     }

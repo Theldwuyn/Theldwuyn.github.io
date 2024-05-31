@@ -67,17 +67,31 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 40px 25px 70px 25px;
+  padding-bottom: 70px;
   background-color: #f6f6f6;
 }
-.hero__title {
-  margin: 0 auto;
-  padding: 0 40px;
+.hero__location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #eaeaea;
+  color: #353535;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+}
+.hero__location--icon {
+  margin-right: 10px;
 }
 .hero__content {
+  padding: 40px 25px 30px 25px;
+}
+.hero__content--title {
+  margin: 0 40px;
+}
+.hero__content--text {
   font-weight: 300;
   margin-top: 15px;
-  margin-bottom: 30px;
 }
 
 .instructions {
@@ -154,7 +168,7 @@ h1, h2, h3 {
 }
 
 @media (min-width: 1024px) {
-  .hero__title {
+  .hero__content--title {
     font-size: 2.5rem;
   }
   .instructions {
@@ -179,7 +193,7 @@ h1, h2, h3 {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .hero__title {
+  .hero__content--title {
     font-size: 2.5rem;
   }
   .instructions {
@@ -237,7 +251,7 @@ h1, h2, h3 {
 }
 .card__content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding: 15px;
 }
@@ -376,18 +390,6 @@ h1, h2, h3 {
   left: 20px;
   font-size: 1.5rem;
 }
-.appbar__location {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #eaeaea;
-  width: 100%;
-  text-align: center;
-  padding: 12px;
-}
-.appbar__location--icon {
-  margin-right: 10px;
-}
 
 .appbar-home .appbar__nav {
   display: none;
@@ -461,7 +463,7 @@ h1, h2, h3 {
   background-color: #99e2d0;
   margin-top: 5px;
   transform-origin: left;
-  animation: animation-accent 1000ms cubic-bezier(0, 0, 0.11, 0.73) both;
+  animation: animation-scaling 1000ms cubic-bezier(0, 0, 0.11, 0.73) both;
 }
 .dishes__category .title-accent--1 {
   animation-delay: 1000ms;
@@ -477,7 +479,7 @@ h1, h2, h3 {
 }
 .dishes__category--1--content {
   transform-origin: center;
-  animation: animation-card 1000ms cubic-bezier(0.27, 0.04, 0.02, 1.29) both;
+  animation: animation-scaling 1000ms cubic-bezier(0.27, 0.04, 0.02, 1.29) both;
 }
 .dishes__category--1--content--1 {
   animation-delay: 800ms;
@@ -496,7 +498,7 @@ h1, h2, h3 {
 }
 .dishes__category--2--content {
   transform-origin: center;
-  animation: animation-card 1000ms cubic-bezier(0.27, 0.04, 0.02, 1.29) both;
+  animation: animation-scaling 1000ms cubic-bezier(0.27, 0.04, 0.02, 1.29) both;
 }
 .dishes__category--2--content--1 {
   animation-delay: 2950ms;
@@ -515,7 +517,7 @@ h1, h2, h3 {
 }
 .dishes__category--3--content {
   transform-origin: center;
-  animation: animation-card 1000ms cubic-bezier(0.27, 0.04, 0.02, 1.29) both;
+  animation: animation-scaling 1000ms cubic-bezier(0.27, 0.04, 0.02, 1.29) both;
 }
 .dishes__category--3--content--1 {
   animation-delay: 5100ms;
@@ -540,12 +542,7 @@ h1, h2, h3 {
     transform: translate(-110%);
   }
 }
-@keyframes animation-accent {
-  0% {
-    transform: scaleX(0);
-  }
-}
-@keyframes animation-card {
+@keyframes animation-scaling {
   0% {
     transform: scaleX(0);
   }

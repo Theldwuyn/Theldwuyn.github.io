@@ -82,7 +82,7 @@ $accent-bezier: cubic-bezier(0,0,.11,.73);
             background-color: $tertiary-color;
             margin-top: 5px;
             transform-origin: left;
-            animation: animation-accent 1000ms $accent-bezier both;
+            animation: animation-scaling 1000ms $accent-bezier both;
             @for $i from 1 through 3 {
                 &--#{$i} {
                     animation-delay: $accent-delay + $total-time * ($i - 1);
@@ -101,7 +101,7 @@ $accent-bezier: cubic-bezier(0,0,.11,.73);
 
                 &--content {
                     transform-origin: center;
-                    animation: animation-card 1000ms $card-bezier both;
+                    animation: animation-scaling 1000ms $card-bezier both;
                     @for $f from 1 through 4 {
                         &--#{$f} {
                             animation-delay: ($total-time * ($i - 1)) + $title-content-delay + $content-delay * ($f - 1);
@@ -131,20 +131,12 @@ $accent-bezier: cubic-bezier(0,0,.11,.73);
     }
 }
 
-//keyframe for the green line below titles
-@keyframes animation-accent {
+//keyframe for the green line below titles and card
+@keyframes animation-scaling {
     0% {
       transform: scaleX(0);
     }
 }
-
-//keyframe for dish card
-@keyframes animation-card {
-    0% {
-        transform: scaleX(0);
-    }
-}
-
 
 @media (min-width:1024px) {
     .dishes {
